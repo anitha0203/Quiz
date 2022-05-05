@@ -1,0 +1,37 @@
+<!-- <input type="text" id="stdname" name="stdname" [(ngModel)]="stdname"  placeholder="Please Enter Name ">
+
+
+<div  class="startbutton"  (click)=show() >Start To Quiz</div>  -->
+
+<body>
+    <div class="side">
+        <tr *ngFor="let first of datas;">  
+            <P class="buttens" (click)="show(this.first.id)">{{first.id}}</P>
+    </div>
+
+    <div class="main" *ngIf=status>
+        <p class="qs">{{d.name}}</p>
+        <div class="options">
+               <div>
+                <input type="radio" id="1" name="op" [(ngModel)]="option" value={{d.op1}} >
+                <label >{{d.op1}}</label>
+              </div>
+          
+              <div>
+                <input type="radio" id="2" name="op" [(ngModel)]="option" value={{d.op2}} >
+                <label >{{d.op2}}</label>
+              </div>
+          
+              <div>
+                <input type="radio" id="3" name="op" [(ngModel)]="option" value={{d.op3}}>
+                <label >{{d.op3}}</label>
+              </div>
+
+              <div>
+                <input type="radio" id="3" name="op" [(ngModel)]="option" value={{d.op4}}>
+                <label >{{d.op4}}</label>
+              </div>
+            </div>
+    </div>
+
+</body>
