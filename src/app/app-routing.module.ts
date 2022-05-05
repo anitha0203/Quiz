@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { QpageComponent } from './qpage/qpage.component';
+import { QuestionComponent } from './question/question.component';
 
 const routes: Routes = [
-  {path:'',component:QpageComponent}
+  {path:'question',component:QuestionComponent},
+  {path:'qpage',component:QpageComponent}
 ];
 
 @NgModule({

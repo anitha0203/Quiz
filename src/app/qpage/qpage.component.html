@@ -3,9 +3,9 @@
 
 <div  class="startbutton"  (click)=show() >Start To Quiz</div>  -->
 
-<body>
+<!-- <body>
     <div class="side">
-        <tr *ngFor="let first of datas;">  
+        <tr *ngFor="let first of datas;">
             <P class="buttens" (click)="show(this.first.id)">{{first.id}}</P>
     </div>
 
@@ -13,25 +13,31 @@
         <p class="qs">{{d.name}}</p>
         <div class="options">
                <div>
-                <input type="radio" id="1" name="op" [(ngModel)]="option" value={{d.op1}} >
+                <input type="radio" (click)="setUserAnswer(option)" id="1" name="op" [(ngModel)]="option" value={{d.op1}} >
                 <label >{{d.op1}}</label>
               </div>
-          
+
               <div>
-                <input type="radio" id="2" name="op" [(ngModel)]="option" value={{d.op2}} >
+                <input type="radio" (click)="setUserAnswer(option)" id="2" name="op" [(ngModel)]="option" value={{d.op2}} >
                 <label >{{d.op2}}</label>
               </div>
-          
+
               <div>
-                <input type="radio" id="3" name="op" [(ngModel)]="option" value={{d.op3}}>
+                <input type="radio" (click)="setUserAnswer(option)" id="3" name="op" [(ngModel)]="option" value={{d.op3}}>
                 <label >{{d.op3}}</label>
               </div>
 
               <div>
-                <input type="radio" id="3" name="op" [(ngModel)]="option" value={{d.op4}}>
+                <input type="radio" (click)="setUserAnswer(option)" id="3" name="op" [(ngModel)]="option" value={{d.op4}}>
                 <label >{{d.op4}}</label>
               </div>
             </div>
     </div>
 
-</body>
+</body> -->
+
+
+
+<div>
+  <input placeholder="add" type="text" id="addData" style="margin: 10px 0px;"  [formControl]="add" />
+</div>

@@ -1,0 +1,95 @@
+.main{
+  width: 100%;
+}
+
+.lef{
+  width:25%;
+  margin-top: 15vh;
+  margin-left: 5vh;
+  float: left;
+}
+
+.rig{
+  width:70%;float: right;
+  margin: auto 0 auto 0;
+}
+
+.but1{
+  margin: 10px;
+  padding: 10px;
+}
+
+.ques{
+  margin-top: 2%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*
+{
+  margin: 0;padding: 0;box-sizing: border-box;font-family: 'Roboto', sans-serif
+}
+
+p
+{
+  margin: 0%;padding-bottom: 25px;padding-top: 25px;font-size: 25px;
+}
+
+body
+{
+  height: 100vh;background-color: bisque;padding: 10px;
+}
+
+.container
+{
+  margin: 30px auto;background: white;padding: 20px 15px;
+}
+
+label.box
+{
+  display: flex;width: 75%;
+  margin-top: 20px;padding: 10px 12px;border-radius: 5px;cursor: pointer;border: 1px solid #ddd
+}
+
+#one:checked~label.first, #two:checked~label.second, #three:checked~label.third, #four:checked~label.forth, #five:checked~label.fifth, #six:checked~label.sixth, #seven:checked~label.seveth, #eight:checked~label.eighth
+{
+  border-color: #1fa83a;
+}
+
+#one:checked~label.first .circle, #two:checked~label.second .circle, #three:checked~label.third .circle, #four:checked~label.forth .circle, #five:checked~label.fifth .circle, #six:checked~label.sixth .circle, #seven:checked~label.seveth .circle, #eight:checked~label.eighth .circle
+{
+  border: 6px solid #8e498e;
+}
+
+label.box:hover
+{
+   border:  #d5bbf7;
+  box-shadow: 1px 1px 3px 3px #6b2a7b;
+}
+
+label.box .course
+{
+  display: flex;align-items: center;width: 100%
+}
+
+label.box .circle
+{
+  height: 22px;width: 22px;border-radius: 50%;margin-right: 15px;border: 2px solid #ddd;display: inline-block
+}
+
+input[type="radio"]
+{
+  display: none
+}
+
+.btn.btn-primary
+{
+  border-radius: 25px;margin-top: 20px
+}
+
+@media(max-width: 450px)
+{
+  .subject
+  {
+    font-size: 12px
+  }
+}

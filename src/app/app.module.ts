@@ -6,11 +6,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QpageComponent } from './qpage/qpage.component';
+import { QuestionComponent } from './question/question.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    QpageComponent
+    QpageComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
